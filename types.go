@@ -3,7 +3,7 @@ package meilisearch
 import (
 	"time"
 
-	"github.com/golang-jwt/jwt/v4"
+	"github.com/golang-jwt/jwt/v5"
 )
 
 type (
@@ -167,9 +167,9 @@ const (
 	// if there aren't enough to meet the requested limit.
 	All MatchingStrategy = "all"
 	// Frequency returns documents containing all the query terms first. If there are not enough results containing
-	//all query terms to meet the requested limit, Meilisearch will remove one query term at a time, starting
-	//with the word that is the most frequent in the dataset. frequency effectively gives more weight to terms
-	//that appear less frequently in a set of results.
+	// all query terms to meet the requested limit, Meilisearch will remove one query term at a time, starting
+	// with the word that is the most frequent in the dataset. frequency effectively gives more weight to terms
+	// that appear less frequently in a set of results.
 	Frequency MatchingStrategy = "frequency"
 )
 

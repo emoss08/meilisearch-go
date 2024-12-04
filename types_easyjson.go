@@ -4,7 +4,7 @@ package meilisearch
 
 import (
 	json "encoding/json"
-	_v4 "github.com/golang-jwt/jwt/v4"
+	_v5 "github.com/golang-jwt/jwt/v5"
 	easyjson "github.com/mailru/easyjson"
 	jlexer "github.com/mailru/easyjson/jlexer"
 	jwriter "github.com/mailru/easyjson/jwriter"
@@ -559,7 +559,7 @@ func easyjson6601e8cdDecodeGithubComMeilisearchMeilisearchGo5(in *jlexer.Lexer, 
 				out.ExpiresAt = nil
 			} else {
 				if out.ExpiresAt == nil {
-					out.ExpiresAt = new(_v4.NumericDate)
+					out.ExpiresAt = new(_v5.NumericDate)
 				}
 				if data := in.Raw(); in.Ok() {
 					in.AddError((*out.ExpiresAt).UnmarshalJSON(data))
@@ -571,7 +571,7 @@ func easyjson6601e8cdDecodeGithubComMeilisearchMeilisearchGo5(in *jlexer.Lexer, 
 				out.NotBefore = nil
 			} else {
 				if out.NotBefore == nil {
-					out.NotBefore = new(_v4.NumericDate)
+					out.NotBefore = new(_v5.NumericDate)
 				}
 				if data := in.Raw(); in.Ok() {
 					in.AddError((*out.NotBefore).UnmarshalJSON(data))
@@ -583,7 +583,7 @@ func easyjson6601e8cdDecodeGithubComMeilisearchMeilisearchGo5(in *jlexer.Lexer, 
 				out.IssuedAt = nil
 			} else {
 				if out.IssuedAt == nil {
-					out.IssuedAt = new(_v4.NumericDate)
+					out.IssuedAt = new(_v5.NumericDate)
 				}
 				if data := in.Raw(); in.Ok() {
 					in.AddError((*out.IssuedAt).UnmarshalJSON(data))
